@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Rotator Playground</title>
+     <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300');
+
+      html, body{
+        margin: 0;
+        padding: 0;
+      }
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        overflow:hidden;
+        text-align:center;
+        font-family:'Roboto Slab', arial, sans-serif;
+        background-color:#00accc;
+        color:#fff;
+      }
+      .content{
+        height:320px;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+      }
+      .header-container span{
+        display:inline-block;
+      }
+      button{
+        position:relative;
+        z-index:10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header-container">
+        <header>
+          <h1>The amazing <span class="title">ROTATOR</span> demo page!</h1>
+          <h2>Look! I'm rotating (with custom settings)!</h2>
+        </header>
+      </div>
+      <div class="main-container">
+        <article>
+          <header>
+            <p>I'm a &lt;header&gt;, an immediate child of &lt;article&gt;</p>
+          </header>
+          <section>
+            <p>I'm a &lt;section&gt;, an immediate child of &lt;article&gt;</p>
+          </section>
+          <section>
+            <p>I'm a &lt;section&gt;, an immediate child of &lt;article&gt;</p>
+          </section>
+          <footer>
+            <p>I'm a &lt;footer&gt;, an immediate child of &lt;article&gt;</p>
+          </footer>
+        </article>
+       </div>
+      <button class="reset">Reset</button>
+      <button class="restart">Restart</button>
+     </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+    <script src="js/rotator/jquery.rotator.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
