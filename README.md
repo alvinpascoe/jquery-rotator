@@ -1,6 +1,8 @@
 # The amazing Rotator.
 A mostly useless jQuery rotator plugin.
 
+[Demo page](https://alvinpascoe.com/demos/jquery/rotator/)
+
 ### Usage
 ```javascript
 // Defaults to a subtle rotate.
